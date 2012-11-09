@@ -1,0 +1,3 @@
+ARCLinux_GettingStarted.pdf
+ARCLinux_ReleaseNotes.pdf
+contents.pdf
