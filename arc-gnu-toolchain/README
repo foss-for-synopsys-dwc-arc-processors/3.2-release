@@ -1,0 +1,27 @@
+
+This toolchain is build for /opt/arc/gnu on Ubuntu 10.04 LTS.
+
+To install the toolchain, goto /opt/arc/gnu and do:
+
+  $> sudo tar xvjf arc-gnu-toolchain-4.4.7.tar.bz2
+  
+When installation elsewhere is required, the next procedure should be executed:
+
+    Fixing the RPATH of the binaries to be moved is the issue.
+	There is a script fix-rpath.sh, which has to be run from the directory
+	location where the toolchain has/is moved to.
+	It will patch the RPATH.
+
+    NOTE: that patchelf is not available as a standard Ubuntu download
+	      (it is in Fedora), needs download from:
+
+          http://hydra.nixos.org/release/patchelf/patchelf-0.6
+
+    Select the 64-bit debian 5 version and install it with:
+
+        $> sudo dpkg -i patchelf_0.6-1_amd64.deb
+
+    Then cd to the tool chain directory and run the script
+
+        $> cd <my toolchain directory location>/4.4.7
+        $> sudo ./fix-rpath.sh
