@@ -1,0 +1,8 @@
+3.2-release
+===========
+
+  NOTE: Synopsys Internal Use Only
+
+    - To unpack the ARC U-boot source code tarball, perform the below listed command:
+
+        $> tar xvjf u-boot-v2012.07.tar.bz2

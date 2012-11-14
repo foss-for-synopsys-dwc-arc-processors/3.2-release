@@ -1,0 +1,8 @@
+3.2-release
+===========
+
+  NOTE: Synopsys Internal Use Only
+
+    - To unpack the ARC initramfs tarball, perform the below listed command:
+
+        $> tar zxvf arc_initramfs_10_2012_dyn_dev.tgz
