@@ -1,18 +1,22 @@
 3.2-release
 ===========
 
-Quick start for ARC Linux 3.2 release (all tarball's) plus documentation pack.
+Quick start for ARC Linux 3.2 release. It contains, all products source code tarball's, prebuilt executable images plus a full documentation pack.
 
-    - arc-gnu-toolchain is prebuild and has README on how to install
+  NOTE: All below listed items are Synopsys Internal Use Only
 
-    - documentation-package contains Realease notes plus Getting started pdf's
+    - arc-linux-source-code; folder contains Linux kernel source code.
 
-    - linux folder contains source code: $> tar xvjf linux-3.2.tar.bz2
+    - arc-u-boot-source-code; folder contains U-boot source code.
 
-    - pre-build-angel4 contains xbf fpga image plus vmlinux
+    - documentation-package; contains Realease notes plus Getting started pdf's.
 
-    - pre-build-haps51 contains bitfile fpga image plus u-boot & vmlinux
+    - prebuilt-arc-angel4; contains xbf fpga image plus vmlinux executable.
 
-    - pre-build-ml509 contains bitfile fpga image plus vmlinux
+    - prebuilt-arc-gnu-toolchain; contains the full ARC GNU toolchain tools executables plus a README on how to install and relocate the toolchain if required.
 
-    - u-boot folder contains source code: $> tar xvjf u-boot-v2012.07.tar.bz2
+    - prebuilt-arc-haps51; contains bitfile fpga image plus u-boot & vmlinux executables.
+
+    - prebuilt-arc-initramfs; contains an ARC root file system which can be used with ARC Angel4, ARC HAPS51 and ARC ML509.
+
+    - prebuilt-arc-ml509; contains bitfile fpga image plus vmlinux executable.
