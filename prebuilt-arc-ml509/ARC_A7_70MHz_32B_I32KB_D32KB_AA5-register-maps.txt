@@ -1,0 +1,4 @@
+
+NOTE: This is an experimental fpga bit-file image due to XMAC investigations.
+      For included/supported pheripherals look into the provided kernel config
+      arc-ml509-vmlinux-defconfig
