@@ -1,8 +1,19 @@
-This toolchain is prebuilt for /opt/arc/gnu on Ubuntu 10.04 LTS.
+This toolchain is prebuilt for installation in /opt/arc/gnu on Ubuntu 10.04 LTS (x86-64).
+
+When installing on Fedora, it is required to do the next;
+ + download and installion (yum not supported) of the next package:
+  cloog-ppl-0.15.7-2.fc14.x86_64.rpm  from:
+  http://rpm.pbone.net/index.php3/stat/4/idpl/17432438/dir/fedora_14/com/cloog-ppl-0.15.7-2.fc14.x86_64.rpm.html
+  $> rpm -ql cloog-ppl
+  $> ln -s libcloog.so.0.0.0 libcloog-ppl.so
+ + the lib path needs to be extended:
+  $> export LD_LIBRARY_PATH=/opt/arc/gnu/4.4.7/x86_64-unknown-linux-gnu/arc-linux-uclibc/lib/:$LD_LIBRARY_PATH
 
 To install the toolchain, go to /opt/arc/gnu (or create these folders) and do:
 
-  $> sudo tar xvjf arc-gnu-toolchain-4.4.7.tar.bz2
+  $> sudo tar xvjf arc-gnu-le-abi2-toolchain-4.4.7-x86-64.tar.bz2
+
+It results in the folder /opt/arc/gnu/4.4.7 where in the "bin" folder the tools are located.
   
 When the prebuilt toolchain needs to be installed or relocated to another directory,
 the following procedure should be executed to fix the RPATH of the binaries being relocated:
